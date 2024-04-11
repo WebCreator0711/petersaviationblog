@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="https://th.bing.com/th?id=OIP.WTcCr9Wby0R1G9yaJFvgwQHaHw&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2">
+    <style>
+        /* Resetting some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .post {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .post h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .post p {
+            color: #666;
+        }
+
+        .post a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .post a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Aviation Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="post">
+                    <h2>Welcome to Aviation Blog!</h2>
+                    <p>Aviation is the practical aspect or art of aeronautics, being the design, development, production, operation, and use of aircraft, especially heavier-than-air aircraft.</p>
+                    <p>This blog is dedicated to providing insights, news, and articles about the fascinating world of aviation. Explore our articles to learn more!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles">
+            <div class="container">
+                <div class="post">
+                    <h3>Article Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium convallis neque, vel commodo arcu venenatis non. Morbi dapibus vehicula nunc, ac eleifend velit eleifend nec. Ut tristique, magna eu congue tempus, ex eros consectetur magna, vel aliquet eros leo sit amet dui.</p>
+                </div>
+                <div class="post">
+                    <h3>Article Title 2</h3>
+                    <p>Curabitur sit amet erat eget odio malesuada finibus sed ac magna. Duis accumsan malesuada libero, eget vestibulum libero imperdiet ut. Sed semper odio at neque gravida, et aliquam lacus consequat.</p>
+                </div>
+                <div class="post">
+                    <h3>Article Title 3</h3>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque rhoncus justo non orci faucibus pharetra. Morbi volutpat ligula vitae magna mollis consectetur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="post">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or inquiries, feel free to reach out to us at aviationblog@example.com.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aviation Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
